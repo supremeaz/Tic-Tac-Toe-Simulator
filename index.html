@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->	
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+	<script src="tictactoe.js"></script>
+	<div class="outer-container">
+		<table class="board">
+			<tr>
+				<td onclick="placeMove(0)" id="position0"></td>
+				<td onclick="placeMove(1)" id="position1"></td>
+				<td onclick="placeMove(2)" id="position2"></td>
+			</tr>
+			<tr>
+				<td onclick="placeMove(3)" id="position3"></td>
+				<td onclick="placeMove(4)" id="position4"></td>
+				<td onclick="placeMove(5)" id="position5"></td>
+			</tr>
+			<tr>
+				<td onclick="placeMove(6)" id="position6"></td>
+				<td onclick="placeMove(7)" id="position7"></td>
+				<td onclick="placeMove(8)" id="position8"></td>
+			</tr>
+		</table>
+		<button type="button" id="leBtn" class="btn btn-primary"data-target="#myModal" data-toggle="modal">Restart</button>
+		<div class="modal fade" role="dialog" id="myModal" show>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="text-center" id="modal-prompt">Select Your Piece</h3>
+					</div>
+					<div class="modal-body">
+						<div class="select-btn">
+							<button class="btn" onclick="chooseIcon('X')"data-dismiss="modal" data-target="#myModal">X</button>
+							<button class="btn" onclick="chooseIcon('O')"data-dismiss="modal" data-target="#myModal">O</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+
+</html>
